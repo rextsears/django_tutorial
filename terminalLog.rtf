@@ -458,5 +458,37 @@ branch 'main' set up to track 'origin/main'.\
 \cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ mkdir polls/templates/polls\
 \cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ touch polls/templates/polls/index.html\
 \cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ touch polls/templates/polls/detail.html\
-\cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ \
+\cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ git add -A\
+\cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ git commit -m "part 3"\
+[main 681fc78] part 3\
+ 5 files changed, 63 insertions(+), 5 deletions(-)\
+ create mode 100644 polls/templates/polls/detail.html\
+ create mode 100644 polls/templates/polls/index.html\
+\cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ git push -u origin main\
+Enumerating objects: 15, done.\
+Counting objects: 100% (15/15), done.\
+Delta compression using up to 8 threads\
+Compressing objects: 100% (9/9), done.\
+Writing objects: 100% (10/10), 1.63 KiB | 1.63 MiB/s, done.\
+Total 10 (delta 3), reused 0 (delta 0), pack-reused 0\
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.\
+To https://github.com/rextsears/django_tutorial.git\
+   5c30ad2..681fc78  main -> main\
+branch 'main' set up to track 'origin/main'.\
+\cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ touch polls/templates/polls/results.html\
+\cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ python3 manage.py runserver\
+Watching for file changes with StatReloader\
+Performing system checks...\
+\
+System check identified no issues (0 silenced).\
+September 11, 2023 - 15:49:28\
+Django version 4.2.5, using settings 'mysite.settings'\
+Starting development server at http://127.0.0.1:8000/\
+Quit the server with CONTROL-C.\
+\
+Not Found: /\
+[11/Sep/2023 15:49:37] \cf11 "GET / HTTP/1.1" 404 2165\cf2 \
+^C
+\f1\b \cf10 \cb2 %
+\f0\b0 \cf2 \cb1                                                                              \cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ \
 }
