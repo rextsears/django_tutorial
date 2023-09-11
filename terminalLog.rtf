@@ -437,5 +437,26 @@ Quit the server with CONTROL-C.\
 [11/Sep/2023 15:30:17] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331\
 ^C
 \f1\b \cf10 \cb2 %
-\f0\b0 \cf2 \cb1                                                                              \cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ \
+\f0\b0 \cf2 \cb1                                                                              \cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ git add -A\
+\cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ git commit -m "parts 1 & 2"\
+[main 5c30ad2] parts 1 & 2\
+ 6 files changed, 501 insertions(+), 8 deletions(-)\
+ create mode 100644 polls/migrations/0001_initial.py\
+ create mode 100644 terminalLog.rtf\
+\cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ git push -u origin main\
+Enumerating objects: 19, done.\
+Counting objects: 100% (19/19), done.\
+Delta compression using up to 8 threads\
+Compressing objects: 100% (11/11), done.\
+Writing objects: 100% (11/11), 7.49 KiB | 2.50 MiB/s, done.\
+Total 11 (delta 4), reused 0 (delta 0), pack-reused 0\
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.\
+To https://github.com/rextsears/django_tutorial.git\
+   11a1589..5c30ad2  main -> main\
+branch 'main' set up to track 'origin/main'.\
+\cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ mkdir polls/templates\
+\cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ mkdir polls/templates/polls\
+\cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ touch polls/templates/polls/index.html\
+\cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ touch polls/templates/polls/detail.html\
+\cf3 rextsears \cf4 ~/code/mysite \cf12 [main]\cf2  $ \
 }
